@@ -4,6 +4,7 @@
 	<title>WoWChaser</title>
 	<link rel="stylesheet" text="text/css" href="stylesheet.css">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<script src="slideshow.js"></script>
 	<meta charset="UTF-8">
 </head>
 <body>
@@ -49,12 +50,21 @@
 					</div>
 				</div>
 				<img id="wow_logo" src="WoW_logo.png">
-				<input type="text" id="searchinput" name="q">
+				<div id="search">
+					<input type="text" id="searchinput" name="q">
+					<i class="fa fa-search fa-2x" aria-hidden="true"><a href="file:///home/anton/private/course/webbutveckling/WoWGuide/index.html/q?"></a></i>
+				</div>
 			</nav>
 		</div>
 		<div id="content">
 			<div id="largeimage_container">
-				<img src="fishing_highlight.jpg" id="highlight_image">
+				<a class="w3-btn-floating" onclick="plusSlides(-1)">&#10094;</a>
+				<div id="slideshow">
+					<img class="mySlides" src="fishing_highlight.jpg">
+					<img class="mySlides" src="frostmilk-cooking.jpg">
+					<img class="mySlides" src="archeology_highlight.jpg">
+				</div>
+				<a class="w3-btn-floating" onclick="plusSlides(+1)">&#10095;</a>
 			</div>
 			<div id="lowerpart_container">
 				<div id="external_links">
@@ -67,22 +77,69 @@
 					</ul>
 				</div>
 				<div id="text_container">
-					<h1>Obtaining Underlight Angler</h1>
-					<h2>Prerequisites</h2>
-					<p>The list of prerequisites is deceivingly short. You must:</p>
-						<ol>
-							<li>
-								Be level 110
-							</li>
-							<li>
-								Have level 800 fishing Not required but you will probably get it anyway
-							</li>
-							<li>
-								Complete the achievement  Bigger Fish to Fry
-							</li>
-						</ol>
-					<p>Reaching level 110 from 100 takes around 8-10 hours, depending on how quickly you complete quests and how easily you get distracted. You will easily reach max level fishing by completing the achievement. Neither of these will take a lot of time, and most players will naturally complete both.<br>...</p>
-					<a href="http://www.wowhead.com/guide=4505/the-legion-fishing-artifact-underlight-angler">Complete Guide</a>
+					<div id="slideInfo">
+						<div class="infoSlides" id="first">
+						<h1>Obtaining Underlight Angler</h1>
+						<h2>Prerequisites</h2>
+						<p>The list of prerequisites is deceivingly short. You must:</p>
+							<ol>
+								<li>
+									Be level 110
+								</li>
+								<li>
+									Have level 800 fishing Not required but you will probably get it anyway
+								</li>
+								<li>
+									Complete the achievement  Bigger Fish to Fry
+								</li>
+							</ol>
+							<p>Reaching level 110 from 100 takes around 8-10 hours, depending on how quickly you complete quests and how easily you get distracted. You will 	easily reach max level fishing by completing the achievement. Neither of these will take a lot of time, and most players will naturally complete both.<br>...</p>
+							<a href="http://www.wowhead.com/guide=4505/the-legion-fishing-artifact-underlight-angler">Complete Guide</a>
+						</div>
+						<div class="infoSlides">
+							<h1>Legion Cooking Guide</h1>
+							<p>This Cooking leveling guide will show you the fastest way how to level your Cooking skill from 1 to 800.</p>
+							<h2>Updated for Legion patch 7.0.3</h2>
+							<p>Cooking in Legion has a new set of tasty recipes, including Bacon, as well as the return of our Pandaria chef friend Nomi! This guide covers all of the World of Warcraft Legion Cooking additions and changes, including recipe discoveries.</p>
+							<ul>
+								<li>
+									Higher ranks for new Legion recipes are learned via Work Order discoveries.
+								</li>
+								<li>
+									Each Cooking Recipe has three ranks. Higher ranks let you craft more food per reagent.
+								</li>
+								<li>
+									Cooking works differently than other professions--your max skill cap is not automatically increased to 800 when you pick up Legion cooking. You must hit level 98 and skill level 700 to learn the next rank.
+								</li>
+							</ul>
+							<p>...</p>
+							<a href="http://www.wowhead.com/guides/legion-cooking">Complete Guide</a>
+						</div>
+						<div class="infoSlides">
+							<h1>Legion Archaeology Guide</h1>
+							<p>This guide covers all of the World of Warcraft Legion Archaeology additions and changes, including new rare solves and Archaeology branches.</p>
+							<h2>Legion Changes</h2>
+							<ul>
+								<li>
+									Dig sites are much more compact--less running around to do.
+								</li>
+								<li>
+									When you reach the right area, a shovel appears over your head.
+								</li>
+								<li>
+									Three Broken Isles digsites spawn at once, vs four in older zones.
+								</li>
+								<li>
+									There are fewer common-quality artifacts from Legion zones, which should make the process of acquiring Pristine solves easier.
+								</li>
+								<li>
+									There is a special Archaeology building in Dalaran. This is where you will train archaeology, pick up quests, and show off your Legion Pristine Artifacts.
+								</li>
+							</ul>
+							<p>...</p>
+							<a href="http://www.wowhead.com/guides/legion-archaeology">Complete Guide</a>
+						</div>
+					</div>
 				</div>
 				<div id="patchinfo_container">
 					<h1>Patch 7.0.3</h1>
